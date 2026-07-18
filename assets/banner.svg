@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640">
+  <defs>
+    <pattern id="banner-dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.5" fill="#FFFFFF" opacity="0.03"/>
+    </pattern>
+    <linearGradient id="banner-accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#DC2626" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#DC2626"/>
+      <stop offset="60%" stop-color="#DC2626" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="banner-glow" cx="50%" cy="40%" r="35%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="banner-border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#27272A" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#DC2626" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#27272A" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background layers -->
+  <rect width="1280" height="640" fill="#09090B"/>
+  <rect width="1280" height="640" fill="url(#banner-dots)"/>
+  <rect width="1280" height="640" fill="url(#banner-glow)"/>
+  <rect x="1" y="1" width="1278" height="638" fill="none" stroke="url(#banner-border)" stroke-width="1"/>
+
+  <!-- Corner marks — top left -->
+  <line x1="40" y1="40" x2="80" y2="40" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+  <line x1="40" y1="40" x2="40" y2="80" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+  <!-- Corner marks — top right -->
+  <line x1="1200" y1="40" x2="1240" y2="40" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+  <line x1="1240" y1="40" x2="1240" y2="80" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+  <!-- Corner marks — bottom left -->
+  <line x1="40" y1="600" x2="80" y2="600" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+  <line x1="40" y1="560" x2="40" y2="600" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+  <!-- Corner marks — bottom right -->
+  <line x1="1200" y1="600" x2="1240" y2="600" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+  <line x1="1240" y1="560" x2="1240" y2="600" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Top accent line -->
+  <rect x="540" y="185" width="200" height="1.5" rx="1" fill="url(#banner-accent)"/>
+
+  <!-- Name -->
+  <text x="640" y="260" text-anchor="middle" fill="#FAFAFA" font-family="'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-size="52" font-weight="700" letter-spacing="12">
+    ATULYA MANIKANDAN
+  </text>
+
+  <!-- Roles -->
+  <text x="640" y="310" text-anchor="middle" fill="#A1A1AA" font-family="'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-size="16" font-weight="400" letter-spacing="5">
+    SOFTWARE ENGINEER  ·  PRODUCT BUILDER  ·  FOUNDER
+  </text>
+
+  <!-- Studio -->
+  <text x="640" y="365" text-anchor="middle" fill="#DC2626" font-family="'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-size="13" font-weight="600" letter-spacing="4">
+    ZERO POINT STUDIOS
+  </text>
+
+  <!-- Tagline -->
+  <text x="640" y="420" text-anchor="middle" fill="#71717A" font-family="'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-size="16" font-weight="300" font-style="italic" letter-spacing="1.5">
+    Building software that solves real problems.
+  </text>
+
+  <!-- Bottom accent line -->
+  <rect x="600" y="460" width="80" height="1" rx="0.5" fill="url(#banner-accent)" opacity="0.5"/>
+</svg>

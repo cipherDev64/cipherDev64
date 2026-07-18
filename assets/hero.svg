@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="300" viewBox="0 0 840 300">
+  <defs>
+    <pattern id="hero-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.5" fill="#FFFFFF" opacity="0.03"/>
+    </pattern>
+    <linearGradient id="accent-fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#DC2626" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#DC2626" stop-opacity="1"/>
+      <stop offset="60%" stop-color="#DC2626" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="hero-glow" cx="50%" cy="35%" r="35%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="border-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#27272A" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#DC2626" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#27272A" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Main background -->
+  <rect width="840" height="300" rx="6" fill="#09090B"/>
+
+  <!-- Subtle border -->
+  <rect x="0.5" y="0.5" width="839" height="299" rx="6" fill="none" stroke="url(#border-grad)" stroke-width="1"/>
+
+  <!-- Dot grid texture -->
+  <rect width="840" height="300" rx="6" fill="url(#hero-dots)"/>
+
+  <!-- Red glow from center-top -->
+  <rect width="840" height="300" rx="6" fill="url(#hero-glow)"/>
+
+  <!-- Corner accents — top left -->
+  <line x1="24" y1="24" x2="48" y2="24" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+  <line x1="24" y1="24" x2="24" y2="48" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Corner accents — top right -->
+  <line x1="792" y1="24" x2="816" y2="24" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+  <line x1="816" y1="24" x2="816" y2="48" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Corner accents — bottom left -->
+  <line x1="24" y1="276" x2="48" y2="276" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+  <line x1="24" y1="252" x2="24" y2="276" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Corner accents — bottom right -->
+  <line x1="792" y1="276" x2="816" y2="276" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+  <line x1="816" y1="252" x2="816" y2="276" stroke="#27272A" stroke-width="1" stroke-linecap="round"/>
+
+  <!-- Top accent line -->
+  <rect x="345" y="46" width="150" height="1.5" rx="1" fill="url(#accent-fade)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="0.3s" dur="0.8s" fill="freeze"/>
+  </rect>
+
+  <!-- Name -->
+  <text x="420" y="108" text-anchor="middle" fill="#FAFAFA" font-family="'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" letter-spacing="8" opacity="0">
+    ATULYA MANIKANDAN
+    <animate attributeName="opacity" from="0" to="1" begin="0.6s" dur="1s" fill="freeze"/>
+  </text>
+
+  <!-- Roles -->
+  <text x="420" y="148" text-anchor="middle" fill="#A1A1AA" font-family="'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" letter-spacing="4" opacity="0">
+    SOFTWARE ENGINEER  ·  PRODUCT BUILDER  ·  FOUNDER
+    <animate attributeName="opacity" from="0" to="1" begin="1.2s" dur="0.8s" fill="freeze"/>
+  </text>
+
+  <!-- Studio name with accent -->
+  <text x="420" y="186" text-anchor="middle" fill="#DC2626" font-family="'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" letter-spacing="4" opacity="0">
+    ZERO POINT STUDIOS
+    <animate attributeName="opacity" from="0" to="1" begin="1.7s" dur="0.8s" fill="freeze"/>
+  </text>
+
+  <!-- Tagline -->
+  <text x="420" y="228" text-anchor="middle" fill="#71717A" font-family="'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-size="14" font-weight="300" font-style="italic" letter-spacing="1" opacity="0">
+    Building software that solves real problems.
+    <animate attributeName="opacity" from="0" to="1" begin="2.2s" dur="0.8s" fill="freeze"/>
+  </text>
+
+  <!-- Bottom accent line -->
+  <rect x="395" y="254" width="50" height="1" rx="0.5" fill="url(#accent-fade)" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="2.7s" dur="0.6s" fill="freeze"/>
+  </rect>
+</svg>

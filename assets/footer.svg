@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="180" viewBox="0 0 840 180">
+  <defs>
+    <linearGradient id="footer-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#DC2626" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#DC2626" stop-opacity="0.5"/>
+      <stop offset="70%" stop-color="#DC2626" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="footer-dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.4" fill="#FFFFFF" opacity="0.025"/>
+    </pattern>
+    <linearGradient id="footer-border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#27272A" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#DC2626" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#27272A" stop-opacity="0.5"/>
+    </linearGradient>
+    <radialGradient id="footer-glow" cx="50%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#DC2626" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#DC2626" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="840" height="180" rx="6" fill="#09090B"/>
+  <rect x="0.5" y="0.5" width="839" height="179" rx="6" fill="none" stroke="url(#footer-border)" stroke-width="1"/>
+  <rect width="840" height="180" rx="6" fill="url(#footer-dots)"/>
+  <rect width="840" height="180" rx="6" fill="url(#footer-glow)"/>
+
+  <!-- Top divider line -->
+  <line x1="120" y1="24" x2="720" y2="24" stroke="url(#footer-line)" stroke-width="1"/>
+
+  <!-- Opening quote mark -->
+  <text x="310" y="82" text-anchor="middle" fill="#DC2626" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="400" opacity="0.3">"</text>
+
+  <!-- Quote text -->
+  <text x="420" y="90" text-anchor="middle" fill="#FAFAFA" font-family="'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-size="18" font-weight="300" font-style="italic" letter-spacing="1.5">
+    Build things worth remembering.
+  </text>
+
+  <!-- Closing quote mark -->
+  <text x="535" y="100" text-anchor="middle" fill="#DC2626" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="400" opacity="0.3">"</text>
+
+  <!-- Attribution -->
+  <text x="420" y="120" text-anchor="middle" fill="#52525B" font-family="'Segoe UI', 'Helvetica Neue', system-ui, -apple-system, sans-serif" font-size="10" font-weight="400" letter-spacing="3">
+    — ATULYA MANIKANDAN
+  </text>
+
+  <!-- Small accent bar -->
+  <rect x="405" y="148" width="30" height="1" rx="0.5" fill="#DC2626" opacity="0.4"/>
+</svg>
