@@ -505,17 +505,17 @@ I write code with a few beliefs I keep coming back to:
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=cipherDev64&show_icons=true&hide_border=true&bg_color=09090B&title_color=DC2626&text_color=FAFAFA&icon_color=DC2626&ring_color=DC2626&count_private=true" width="49%" alt="GitHub Stats"/>
+<img src="https://github-readme-stats-git.vercel.app/api?username=cipherDev64&show_icons=true&hide_border=true&bg_color=09090B&title_color=DC2626&text_color=FAFAFA&icon_color=DC2626&ring_color=DC2626&count_private=true" width="49%" alt="GitHub Stats"/>
 &nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=cipherDev64&layout=compact&hide_border=true&bg_color=09090B&title_color=DC2626&text_color=FAFAFA&langs_count=8" width="42%" alt="Top Languages"/>
+<img src="https://github-readme-stats-git.vercel.app/api/top-langs/?username=cipherDev64&layout=compact&hide_border=true&bg_color=09090B&title_color=DC2626&text_color=FAFAFA&langs_count=8" width="42%" alt="Top Languages"/>
 
 <br/><br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=cipherDev64&hide_border=true&background=09090B&stroke=27272A&ring=DC2626&fire=DC2626&currStreakLabel=FAFAFA&sideLabels=FAFAFA&currStreakNum=FAFAFA&sideNums=FAFAFA&dates=52525B" width="60%" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com/?user=cipherDev64&hide_border=true&background=09090B&stroke=27272A&ring=DC2626&fire=DC2626&currStreakLabel=FAFAFA&sideLabels=FAFAFA&currStreakNum=FAFAFA&sideNums=FAFAFA&dates=52525B" width="60%" alt="GitHub Streak"/>
 
 <br/><br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=cipherDev64&theme=github_dark" width="80%" alt="Profile Details"/>
+<img src="https://raw.githubusercontent.com/cipherDev64/cipherDev64/profile-summary-cards/profile-summary-card-output/github_dark/profile-details.svg" width="80%" alt="Profile Details"/>
 
 </div>
 
@@ -548,9 +548,9 @@ I write code with a few beliefs I keep coming back to:
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cipherDev64/cipherDev64/output/github-snake-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cipherDev64/cipherDev64/output/github-snake.svg"/>
-  <img src="https://raw.githubusercontent.com/cipherDev64/cipherDev64/output/github-snake-dark.svg" width="100%" alt="Snake animation"/>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="assets/github-snake.svg"/>
+  <img src="assets/github-snake.svg" width="100%" alt="Snake animation"/>
 </picture>
 
 </div>
