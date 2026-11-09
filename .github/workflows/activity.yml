@@ -1,27 +1,27 @@
-name: Recent Activity
+name: refresh activity graph
 
 on:
   schedule:
-    - cron: "*/30 * * * *" # Runs every 30 minutes
-  workflow_dispatch:
+    - cron: "23 */12 * * *"   # twice a day
+  workflow_dispatch:           # or run it by hand from the Actions tab
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-    permissions:
-      contents: write
-
+    timeout-minutes: 5
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Update README with recent activity
-        uses: jamesgeorge007/github-activity-readme@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          COMMIT_MSG: "chore: update recent activity"
-          MAX_LINES: 5
-          COMMIT_NAME: GitHub Activity Bot
-          COMMIT_EMAIL: activity-bot@github.com
+      - uses: actions/checkout@v4
+      - name: Rebuild assets/activity.svg from my real contributions
+        run: python3 scripts/build_activity.py cipherDev64 assets/activity.svg
+      - name: Commit if it changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/activity.svg
+          if ! git diff --staged --quiet; then
+            git commit -m "refresh activity graph"
+            git push
+          fi
